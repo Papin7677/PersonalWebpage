@@ -21,7 +21,7 @@ export const az: TranslationKeys = {
             "Təmiz kodla maraqlı oyunlar və miqyaslanan veb həllər yaradıram. Cəlbedici təcrübələr yaratmağa və mürəkkəb problemləri sadə arxitektura ilə həll etməyə həvəsliyəm.",
         cta: {
             viewWork: "İşlərə Baxın",
-            downloadResume: "CV Yükləyin",
+            viewResume: "CV-yə Baxın",
         },
     },
 
@@ -124,19 +124,19 @@ export const az: TranslationKeys = {
     skillsData: [
         {
             category: "Dillər",
-            skills: ["TypeScript", "JavaScript", "Python", "Unity C#"],
+            skills: ["TypeScript", "JavaScript", "Python", "Unity C#", "Java", "SQL"],
         },
         {
             category: "Frontend",
-            skills: ["React", "Next.js", "CSS", "HTML"],
+            skills: ["React", "CSS", "HTML"],
         },
         {
             category: "Backend",
-            skills: ["Node.js", "PostgreSQL", "MySQL"],
+            skills: ["Node.js", "Express.js", "PostgreSQL", "MySQL"],
         },
         {
             category: "Alətlər",
-            skills: ["Git", "Rest API", "Unity"],
+            skills: ["Git", "RESTful APIs", "Unity", "Postman"],
         },
     ],
 };

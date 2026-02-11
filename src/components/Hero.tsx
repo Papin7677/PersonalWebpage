@@ -20,7 +20,7 @@ export function Hero() {
                             {t.hero.cta.viewWork}
                         </a>
                         <a href="/resume.pdf" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                            {t.hero.cta.downloadResume}
+                            {t.hero.cta.viewResume}
                         </a>
                     </div>
                 </div>

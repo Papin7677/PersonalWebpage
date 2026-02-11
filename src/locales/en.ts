@@ -19,7 +19,7 @@ export const en = {
             "I build immersive games and scalable web solutions with clean code. Passionate about creating engaging experiences and solving complex problems with simple architecture.",
         cta: {
             viewWork: "View My Work",
-            downloadResume: "Download Resume",
+            viewResume: "View Resume",
         },
     },
 
@@ -124,19 +124,19 @@ export const en = {
     skillsData: [
         {
             category: "Languages",
-            skills: ["TypeScript", "JavaScript", "Python", "Unity C#"],
+            skills: ["TypeScript", "JavaScript", "Python", "Unity C#", "Java", "SQL"],
         },
         {
             category: "Frontend",
-            skills: ["React", "Next.js", "CSS", "HTML"],
+            skills: ["React", "CSS", "HTML"],
         },
         {
             category: "Backend",
-            skills: ["Node.js", "PostgreSQL", "MySQL"],
+            skills: ["Node.js", "Express.js", "PostgreSQL", "MySQL"],
         },
         {
             category: "Tools",
-            skills: ["Git", "Rest API", "Unity"],
+            skills: ["Git", "RESTful APIs", "Unity", "Postman"],
         },
     ],
 };
