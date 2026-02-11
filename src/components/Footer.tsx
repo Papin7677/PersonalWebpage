@@ -38,7 +38,7 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/vugar-gurbanov-2b9b60236/ " target="_blank" rel="noopener noreferrer">
                                     LinkedIn
                                 </a>
                             </li>
