@@ -1,0 +1,32 @@
+.nda-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* backdrop-filter: blur(4px); Removed for performance */
+  padding: 1rem;
+}
+
+.nda-modal {
+  background-color: hsl(var(--color-surface));
+  padding: 2.5rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid hsl(var(--color-border));
+}
+
+.nda-modal h2 {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: hsl(var(--color-text));
+}

@@ -1,0 +1,128 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, hsl(var(--color-bg)) 0%, hsl(var(--color-surface)) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+}
+
+.highlight {
+    background: linear-gradient(135deg, hsl(var(--color-primary)), hsl(var(--color-accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-2xl);
+    color: hsl(var(--color-text-muted));
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-lg);
+}
+
+.hero-description {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: hsl(var(--color-text-muted));
+    margin-bottom: var(--space-2xl);
+    max-width: 600px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: hsl(var(--color-primary));
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: hsl(var(--color-text));
+    border-color: hsl(var(--color-border));
+}
+
+@media (hover: hover) {
+    .btn-primary:hover {
+        background: hsl(var(--color-primary-dark));
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary:hover {
+        background: hsl(var(--color-surface));
+        border-color: hsl(var(--color-primary));
+        color: hsl(var(--color-primary));
+        transform: translateY(-2px);
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+        padding: var(--space-2xl) 0;
+    }
+
+    .hero-title {
+        text-align: center;
+    }
+
+    .hero-subtitle,
+    .hero-description {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

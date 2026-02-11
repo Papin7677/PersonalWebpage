@@ -1,0 +1,57 @@
+.projects-section {
+    padding: 6rem 1rem;
+    background-color: var(--bg-secondary);
+    scroll-margin-top: 4rem;
+    /* Adds offset for smooth scrolling */
+}
+
+.projects-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.projects-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    min-width: 0;
+    /* Prevent flex items from overflowing */
+}
+
+.projects-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.reveal-btn {
+    min-width: 150px;
+}
+
+/* Responsive Handling handled in JS/CSS combo. 
+   Since we hardcoded 3 columns in JS, we need to hide/stack them on smaller screens 
+   OR better yet, change the JS logic based on screen size. 
+   For now, to fix the user request immediately effectively, use CSS to stack columns on mobile.
+*/
+
+@media (max-width: 1024px) {
+    /* On tablets, we ideally want 2 columns. 
+       The JS hardcodes 3. We might need to update JS to be responsive.
+       Let's stick to the visual requirements first. */
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+    }
+}
