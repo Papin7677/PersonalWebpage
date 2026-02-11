@@ -124,15 +124,15 @@ export const az: TranslationKeys = {
     skillsData: [
         {
             category: "Dillər",
-            skills: ["TypeScript", "JavaScript", "Python", "Unity C#", "Java", "SQL"],
-        },
-        {
-            category: "Frontend",
-            skills: ["React", "CSS", "HTML"],
+            skills: ["TypeScript", "JavaScript", "Python", "C#", "SQL"],
         },
         {
             category: "Backend",
             skills: ["Node.js", "Express.js", "PostgreSQL", "MySQL"],
+        },
+        {
+            category: "Frontend",
+            skills: ["React", "CSS", "HTML"],
         },
         {
             category: "Alətlər",

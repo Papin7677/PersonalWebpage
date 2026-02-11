@@ -13,7 +13,6 @@
     line-height: 1;
     width: 40px;
     height: 36px;
-    /* Match height of select inputs usually */
 }
 
 .theme-switcher:hover {

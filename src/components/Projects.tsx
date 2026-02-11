@@ -40,7 +40,7 @@ export function Projects({ onNdaClick }: ProjectsProps) {
     }, []);
 
     // Determine which projects to display
-    // On desktop (not mobile), always show all projects
+    // On desktop, always show all projects
     // On mobile, show all if showAll is true, otherwise show limited count
     const visibleProjects = !isMobile || showAll
         ? t.projectData
