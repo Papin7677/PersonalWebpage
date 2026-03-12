@@ -38,17 +38,9 @@
     min-width: 150px;
 }
 
-/* Responsive Handling handled in JS/CSS combo. 
-   Since we hardcoded 3 columns in JS, we need to hide/stack them on smaller screens 
-   OR better yet, change the JS logic based on screen size. 
-   For now, to fix the user request immediately effectively, use CSS to stack columns on mobile.
-*/
 
-@media (max-width: 1024px) {
-    /* On tablets, we ideally want 2 columns. 
-       The JS hardcodes 3. We might need to update JS to be responsive.
-       Let's stick to the visual requirements first. */
-}
+
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
     .projects-grid {

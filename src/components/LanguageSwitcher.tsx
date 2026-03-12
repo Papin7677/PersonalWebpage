@@ -1,3 +1,4 @@
+
 import { useLocalization } from '../hooks/useLocalization';
 import { languages } from '../locales';
 import './LanguageSwitcher.css';
