@@ -33,7 +33,7 @@ export const az: TranslationKeys = {
         keyPoints: "Əsas Nöqtələr:",
         links: {
             github: "GitHub",
-            liveDemo: "Canlı Demo",
+            liveDemo: "Link",
             blogPost: "Bloq Postu",
             ndaMessage: "Üzr istəyirik, layihə ya qapalı mənbəlidir, ya gizlilik müqaviləsi (NDA) altındadır, ya da müştəriyə məxsusdur.",
             back: "Geri",
@@ -105,7 +105,23 @@ export const az: TranslationKeys = {
                 "Beam Search və label smoothing istifadə edərək tərcümə keyfiyyətini optimallaşdırdım",
             ],
         },
+        
         {
+         id: "eco-clash",
+        title: "Eco Clash",
+        description: "Eco Clash üçün hazırlanmış açılış səhifəsi. Platforma yeni nəsil Azərbaycanlı sahibkarları dəstəkləyir. İstifadəçilər qeydiyyatdan keçə, daxil ola və tədbirlər üçün bilet ala bilərlər.",
+        technologies: ["React", "Node.js", "SQLite", "REST API", "JWT", "Postman"],
+        githubUrl: "",
+        liveUrl: "https://eco-cash.net/",
+        highlights: [
+            "İstifadəçi autentifikasiyası və onlayn bilet satışı funksiyalarını özündə birləşdirən tam funksional full-stack tədbir idarəetmə platforması hazırladım.",
+            "Təhlükəsiz və etibarlı onlayn ödənişləri təmin etmək üçün epoint.az ödəniş sistemini inteqrasiya etdim.",
+            "İstifadəçi sessiyalarının təhlükəsizliyini və API-lərə qorunan girişi təmin etmək üçün JWT əsaslı autentifikasiya tətbiq etdim.",
+            "İstifadəçi autentifikasiyası, bilet idarəetməsi və ödəniş prosesləri üçün RESTful API-lər hazırladım və inteqrasiya etdim.",
+            "Tədbir əməkdaşlarının QR kodları skan edib biletləri yoxlaması üçün autentifikasiya paneli hazırladım, bununla saxta və təkrar istifadə olunan biletlərin qarşısını aldım."
+    ],
+},
+{
             id: 'svetloyar',
             title: 'Svetloyar',
             description: '9 nəfərlik komanda ilə Unity-də hazırlanmış 2D göyərtə qurma roguelike oyunu. Oyunçular növbəli döyüşlərdə düşmənlərlə vuruşmaq üçün kartları strateji idarə edir.',
@@ -117,7 +133,7 @@ export const az: TranslationKeys = {
                 'Mürəkkəb kart qarşılıqlı əlaqəsi və döyüş sistemləri',
                 'Müxtəlif hücum nümunələri olan düşmən süni intellekti'
             ]
-        }
+        },
     ],
 
     // Skills data

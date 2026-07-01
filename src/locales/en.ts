@@ -31,7 +31,7 @@ export const en = {
         keyPoints: "Key Points:",
         links: {
             github: "GitHub",
-            liveDemo: "Live Demo",
+            liveDemo: "Live",
             blogPost: "Blog Post",
             ndaMessage: "Sorry, the project is either closed-source, under NDA, or client-owned.",
             back: "Back",
@@ -105,7 +105,21 @@ export const en = {
                 "Even though the result was a failure, it was a great learning opportunity",
             ],
         },
-        {
+{
+            id: "eco-clash",
+            title: "Eco Clash",
+            description: "A landing page for Eco Clash, a platform that empowers the next generation of Azerbaijani entrepreneurs. Users can register, log in, and purchase tickets for events.",
+            technologies: ["React", "Node.js", "SQLite", "REST API", "JWT", "Postman"],
+            githubUrl: "",
+            liveUrl: "https://eco-cash.net/",
+            highlights: [
+                "Built a full-stack event management platform with user authentication and online ticket purchasing.",
+                "Integrated the epoint.az payment gateway to provide secure and reliable online payments.",
+                "Implemented JWT-based authentication to ensure secure user sessions and protected API access.",
+                "Designed and consumed RESTful APIs for user authentication, ticket management, and payment processing.",
+                "Developed a ticket authentication panel for event personnel to scan and verify QR codes, preventing fraudulent and duplicate ticket usage."
+    ],
+},        {
             id: 'svetloyar',
             title: 'Svetloyar',
             description: 'A 2D deck-building roguelike game developed in Unity with a team of 9. Players strategically manage cards to battle enemies in turn-based combat, featuring complex attack and defense mechanics.',
@@ -117,7 +131,7 @@ export const en = {
                 'Implemented complex card interaction and combat systems',
                 'Designed responsive enemy AI with varied attack patterns'
             ]
-        }
+        },
     ],
 
     // Skills data
