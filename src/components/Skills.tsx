@@ -7,7 +7,7 @@ export function Skills() {
     return (
         <section id="skills" className="section skills-section">
             <div className="container">
-                <h2 className="section-title text-center">{t.skills.title}</h2>
+                <h2 className="section-title">{t.skills.title}</h2>
                 <div className="skills-grid">
                     {t.skillsData.map((category) => (
                         <div key={category.category} className="skill-category">

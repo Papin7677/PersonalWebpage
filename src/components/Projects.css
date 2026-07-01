@@ -1,46 +1,62 @@
 .projects-section {
-    padding: 6rem 1rem;
-    background-color: var(--bg-secondary);
-    scroll-margin-top: 4rem;
-    /* Adds offset for smooth scrolling */
+    padding: var(--space-3xl) 0;
+    background-color: hsl(var(--color-bg));
+    border-top: 1px solid hsl(var(--color-border));
 }
 
 .projects-header {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 4rem;
+    margin-bottom: var(--space-2xl);
+    max-width: 600px;
+}
+
+.projects-header .section-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-xs);
+    color: hsl(var(--color-text));
+}
+
+.projects-header .section-description {
+    font-size: var(--font-size-base);
+    color: hsl(var(--color-text-muted));
+    line-height: 1.5;
 }
 
 .projects-grid {
     display: flex;
-    gap: 2rem;
+    gap: var(--space-xl);
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: var(--space-xl);
     align-items: flex-start;
 }
 
 .projects-column {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-xl);
     flex: 1;
     min-width: 0;
-    /* Prevent flex items from overflowing */
 }
 
 .projects-actions {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: var(--space-xl);
 }
 
 .reveal-btn {
-    min-width: 150px;
+    min-width: 140px;
 }
 
-
-
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .projects-grid {
+        gap: var(--space-lg);
+    }
+    .projects-column {
+        gap: var(--space-lg);
+    }
+}
 
 @media (max-width: 768px) {
     .projects-grid {

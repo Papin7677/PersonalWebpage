@@ -8,6 +8,7 @@ export function Hero() {
         <section className="hero">
             <div className="container">
                 <div className="hero-content">
+                    <span className="hero-tag">engineering.log</span>
                     <h1 className="hero-title">
                         {t.hero.greeting} <span className="highlight">{t.hero.name}</span>
                     </h1>

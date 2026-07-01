@@ -4,29 +4,34 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  /* backdrop-filter: blur(4px); Removed for performance */
-  padding: 1rem;
+  z-index: var(--z-modal);
+  padding: var(--space-md);
 }
 
 .nda-modal {
   background-color: hsl(var(--color-surface));
-  padding: 2.5rem;
-  border-radius: 1rem;
-  max-width: 500px;
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  max-width: 440px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-lg);
   border: 1px solid hsl(var(--color-border));
 }
 
 .nda-modal h2 {
-  margin-bottom: 2rem;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
   color: hsl(var(--color-text));
+}
+
+.nda-modal .btn {
+  min-width: 120px;
 }

@@ -1,11 +1,11 @@
 .header {
     position: sticky;
     top: 0;
-    background-color: hsl(var(--color-bg) / 0.95);
-    backdrop-filter: blur(10px);
+    background-color: hsl(var(--color-bg) / 0.8);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid hsl(var(--color-border));
     z-index: var(--z-sticky);
-    padding: var(--space-md) 0;
+    padding: var(--space-sm) 0;
 }
 
 .nav {
@@ -21,9 +21,10 @@
 }
 
 .logo {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
     color: hsl(var(--color-text));
+    letter-spacing: -0.01em;
 }
 
 .logo:hover {
@@ -32,60 +33,50 @@
 
 .nav-links {
     display: flex;
-    gap: var(--space-xl);
+    gap: var(--space-md);
     list-style: none;
 }
 
 .nav-links a {
-    position: relative;
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    color: hsl(var(--color-text));
-    transition: color var(--transition-base);
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: hsl(var(--color-primary));
-    transition: width var(--transition-base);
+    color: hsl(var(--color-text-muted));
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
 }
 
 .nav-links a:hover {
-    color: hsl(var(--color-primary));
-}
-
-.nav-links a:hover::after {
-    width: 100%;
+    color: hsl(var(--color-text));
+    background-color: hsl(var(--color-code-bg));
 }
 
 @media (max-width: 768px) {
     .header {
-        padding: var(--space-sm) 0;
+        padding: var(--space-xs) 0;
     }
 
+    .nav-links a {
+        font-size: var(--font-size-xs);
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 600px) {
     .nav {
         flex-direction: column;
-        gap: var(--space-sm);
+        gap: var(--space-xs);
+        align-items: center;
     }
 
     .nav-right {
         width: 100%;
         justify-content: center;
-        gap: var(--space-sm);
+        gap: var(--space-xs);
         flex-wrap: wrap;
     }
 
     .nav-links {
-        gap: var(--space-md);
-        padding: 0;
-        margin-bottom: var(--space-xs);
-    }
-
-    .logo {
-        font-size: var(--font-size-lg);
+        gap: var(--space-2xs);
     }
 }

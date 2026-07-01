@@ -2,25 +2,24 @@
     background: transparent;
     border: 1px solid hsl(var(--color-border));
     color: hsl(var(--color-text));
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all var(--transition-fast);
-    font-size: 1.2rem;
-    line-height: 1;
-    width: 40px;
-    height: 36px;
+    font-size: 0.9rem;
+    width: 32px;
+    height: 32px;
+    padding: 0;
 }
 
 .theme-switcher:hover {
-    background: hsl(var(--color-surface));
-    border-color: hsl(var(--color-primary));
+    background: hsl(var(--color-code-bg));
+    border-color: hsl(var(--color-text-muted) / 0.5);
 }
 
 .theme-switcher:focus-visible {
-    outline: 2px solid hsl(var(--color-primary));
+    outline: 1.5px solid hsl(var(--color-primary));
     outline-offset: 2px;
 }

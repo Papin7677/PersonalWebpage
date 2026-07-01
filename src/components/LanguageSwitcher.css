@@ -4,32 +4,33 @@
 }
 
 .language-select {
-    padding: var(--space-sm) var(--space-md);
-    font-size: var(--font-size-sm);
+    padding: 0 var(--space-sm);
+    height: 32px;
+    font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     font-family: var(--font-body);
     color: hsl(var(--color-text));
-    background: hsl(var(--color-surface));
+    background: transparent;
     border: 1px solid hsl(var(--color-border));
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all var(--transition-fast);
 }
 
 .language-select:hover {
-    border-color: hsl(var(--color-primary));
-    background: hsl(var(--color-bg));
+    background: hsl(var(--color-code-bg));
+    border-color: hsl(var(--color-text-muted) / 0.5);
 }
 
 .language-select:focus {
-    outline: 2px solid hsl(var(--color-primary));
+    outline: 1.5px solid hsl(var(--color-primary));
     outline-offset: 2px;
     border-color: hsl(var(--color-primary));
 }
 
 @media (max-width: 768px) {
     .language-select {
-        font-size: var(--font-size-xs);
-        padding: var(--space-xs) var(--space-sm);
+        height: 28px;
+        font-size: 11px;
     }
 }
