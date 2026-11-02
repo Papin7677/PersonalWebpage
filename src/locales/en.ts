@@ -111,7 +111,7 @@ export const en = {
             description: "A landing page for Eco Clash, a platform that empowers the next generation of Azerbaijani entrepreneurs. Users can register, log in, and purchase tickets for events.",
             technologies: ["React", "Node.js", "SQLite", "REST API", "JWT", "Postman"],
             githubUrl: "",
-            liveUrl: "https://eco-cash.net/",
+            liveUrl: '',
             highlights: [
                 "Built a full-stack event management platform with user authentication and online ticket purchasing.",
                 "Integrated the epoint.az payment gateway to provide secure and reliable online payments.",

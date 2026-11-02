@@ -112,7 +112,7 @@ export const az: TranslationKeys = {
         description: "Eco Clash üçün hazırlanmış açılış səhifəsi. Platforma yeni nəsil Azərbaycanlı sahibkarları dəstəkləyir. İstifadəçilər qeydiyyatdan keçə, daxil ola və tədbirlər üçün bilet ala bilərlər.",
         technologies: ["React", "Node.js", "SQLite", "REST API", "JWT", "Postman"],
         githubUrl: "",
-        liveUrl: "https://eco-cash.net/",
+        liveUrl: '',
         highlights: [
             "İstifadəçi autentifikasiyası və onlayn bilet satışı funksiyalarını özündə birləşdirən tam funksional full-stack tədbir idarəetmə platforması hazırladım.",
             "Təhlükəsiz və etibarlı onlayn ödənişləri təmin etmək üçün epoint.az ödəniş sistemini inteqrasiya etdim.",
